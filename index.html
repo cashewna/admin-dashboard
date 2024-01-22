@@ -1,22 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title></title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-    <body>
-        <div class="wrapper">
-            <div class="header">
 
-            </div>
-            <div class="sidebar">
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
 
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <form id="search-form" action="index.html" method="get">
+                <button type="submit" id="search-btn"><img src="assets/magnify.svg" alt="Search Button"></button>
+                <input type="text" name="search" id="search">
+            </form>
+            
+            <div class="header__top-right">
+                <button id="notifications-btn"><img src="assets/notifications.svg" alt="Notification Button"></button>
+                <img src="assets/baby.svg" alt="Baby Face" width="40px">
+                <p class="username">Username</p>
             </div>
-            <div class="content">
+            
+            <div class="header__bottom-left">
+                <img src="assets/baby.svg" alt="Baby Face" width="40px">
+                <div class="greeting">
+                    <p class="greeting__hello">Hi there,</p>
+                    <p class="username">Username</p>                    
+                </div>
+            </div>
+            
+            <div class="header__bottom-right">
+                <button>New</button>
+                <button>Upload</button>
+                <button>Share</button>
+            </div>
 
-            </div>
         </div>
-    </body>
+
+        <div class="sidebar">
+
+        </div>
+
+        <div class="content">
+
+        </div>
+    </div>
+</body>
+
 </html>
