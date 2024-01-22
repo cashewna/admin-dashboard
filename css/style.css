@@ -147,6 +147,39 @@ h6 {
     grid-row: 1 / 3;
 
     background-color: var(--500);
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr 3fr;
+    
+    .title {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        display: flex;
+        align-items: center;
+    }
+    
+    .main_menu {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    
+    .main_menu-item {
+        display: flex;
+    }
+    
+    .main_menu,
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .bottom {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+    
 }
 
 .content {
