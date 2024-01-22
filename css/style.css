@@ -18,6 +18,8 @@ body {
     --300: #fde047;
     --400: #facc15;
     --500: #eab308;
+    --900: #78350f;
+    --950: #451a03;
 }
 
 img,
@@ -86,7 +88,7 @@ h6 {
         #search {
             min-width: 80%;
             border-radius: 1rem;
-            border: none;
+            border: 1px solid var(--400);
             background-color: var(--200);
         }
     }
@@ -132,7 +134,8 @@ h6 {
         button {
             border: 1px solid var(--500);
             border-radius: 0.3rem;
-            background-color: var(--400);            
+            background-color: var(--400);
+            color: var(--950);
             cursor: pointer;
             padding: 0.5rem 1.3rem;
         }
