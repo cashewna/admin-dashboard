@@ -59,6 +59,7 @@ h6 {
     grid-template-rows: minmax(200px, 1fr) 5fr;
 
     min-height: 100vh;
+    max-width: 100%;
 }
 
 .header {
@@ -84,7 +85,7 @@ h6 {
                 width: 40px;
             }
         }
-        
+
         #search {
             min-width: 80%;
             border-radius: 1rem;
@@ -92,7 +93,7 @@ h6 {
             background-color: var(--200);
         }
     }
-    
+
     .header__top-right {
         grid-column: 2 / 3;
         grid-row: 1 / 2;
@@ -108,11 +109,11 @@ h6 {
         cursor: pointer;
     }
 
-    #notifications-btn > img {
+    #notifications-btn>img {
         min-width: 40px;
         height: 40px;
     }
-    
+
     .header__bottom-left {
         grid-column: 1 / 2;
         grid-row: 2 / 3;
@@ -122,7 +123,7 @@ h6 {
         display: flex;
         gap: 1rem;
     }
-    
+
     .header__bottom-right {
         grid-column: 2 / 3;
         grid-row: 2 / 3;
@@ -153,15 +154,16 @@ h6 {
     grid-template-rows: 1fr 3fr 3fr 3fr;
     align-items: start;
     gap: 2rem;
-    
+
     .title {
         margin-top: 3rem;
         gap: 0.5rem;
+
         p {
             font-size: 1.5rem;
         }
     }
-    
+
     .title,
     .main_menu-item,
     .bottom__item {
@@ -172,33 +174,33 @@ h6 {
         margin-left: 0.5rem;
         cursor: pointer;
     }
-    
+
     .main_menu-item,
     .bottom__item {
         gap: 1rem;
     }
-    
+
     .main_menu {
         grid-column: 1 / 2;
         grid-row: 2 / 3;
     }
-    
+
     .main_menu-item {
         display: flex;
     }
-    
+
     .main_menu,
     .bottom {
         display: flex;
         flex-direction: column;
         gap: 2rem;
     }
-    
+
     .bottom {
         grid-column: 1 / 2;
         grid-row: 3 / 4;
     }
-    
+
 }
 
 .content {
@@ -209,24 +211,39 @@ h6 {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
-    
+
     padding-left: 1rem;
-    
+
     .projects {
         grid-column: 1 / 2;
         grid-row: 1 / 3;
+
+        h1 {
+            grid-column: span;
+            grid-row: 1 / 2;
+        }
+
+        .project-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-gap: 20px;
+
+            .card {
+                background-color: var(--200);
+            }
+        }
     }
-    
+
     .announcements {
         grid-column: 2 / 3;
         grid-row: 1 / 2;
     }
-    
+
     .trending {
         grid-column: 2 / 3;
         grid-row: 2 / 3;
     }
-    
+
     .projects,
     .announcements,
     .trending {
