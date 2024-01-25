@@ -222,6 +222,7 @@ h6 {
         h1 {
             grid-column: span;
             grid-row: 1 / 2;
+            margin-bottom: 1rem;
         }
 
         .project-list {
