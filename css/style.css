@@ -233,6 +233,22 @@ h6 {
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         margin: 1rem 16px 1rem 0;
     }
+    
+    .trending-card {
+        background-color: var(--200);
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+
+        .left {
+            grid-column: 1 / 2;
+        }
+
+        img {
+            border-radius: 50%;
+            height: 50px;
+        }
+    }
 
     .projects {
         h1 {
@@ -267,6 +283,7 @@ h6 {
     .trending {
         grid-column: 2 / 3;
         grid-row: 2 / 3;
+        margin-top: 1rem;
     }
 
     .projects,
