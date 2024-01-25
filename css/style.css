@@ -235,7 +235,6 @@ h6 {
     }
     
     .trending-card {
-        background-color: var(--200);
         padding: 1rem;
         display: grid;
         grid-template-columns: 1fr 3fr;
@@ -284,6 +283,11 @@ h6 {
         grid-column: 2 / 3;
         grid-row: 2 / 3;
         margin-top: 1rem;
+
+        .trending-list {
+            border-radius: 0.5rem;
+            background-color: var(--200);
+        }
     }
 
     .projects,
